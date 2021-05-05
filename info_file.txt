@@ -1,0 +1,15 @@
+      await http.delete(config.apiEndpoint + '/' + post.id);
+      await http.delete(’s’ + config.apiEndpoint + '/' + post.id); // to test unexpected error
+	await http.delete(config.apiEndpoint + ‘/999’); // to test expected error
+
+
+Ramesh jp12:31 PM
+mongodb://shhpartyarohaadmin:ShhPartyAdminaroha123@72.14.190.91:27017/dev_sshparty?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false
+
+Ramesh jp1:00 PM
+npm install node-gyp -g
+npm install bcrypt -g
+
+npm install bcrypt --save
+
+npm 
