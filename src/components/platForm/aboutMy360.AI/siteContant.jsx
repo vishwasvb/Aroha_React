@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from '../../../static/images/50-Beautiful-031.jpg';
+
 const SiteComponent = () => {
     return ( 
         <React.Fragment>
@@ -104,7 +106,7 @@ const SiteComponent = () => {
 </div>  
 
 
-<section id="services" class="services mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background"  style="background-image: url(images/50-Beautiful-031.jpg); height: auto;">
+<section id="services" class="services mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background"  style={{backgroundImage:`(url${Image})`, height: 100}}>
     <div class="section-overlay"></div>
     <div class="container">
         <div class="row center">
