@@ -2,24 +2,27 @@ import React from 'react';
 
 import {Link} from 'react-router-dom'
 
+// import image from '../../../public/images/icon/'
+
+
 const NavBar = () => {
     return ( 
         <React.Fragment>
 
 <div id="site-header">
-            <header id="header" class="header clearfix"> 
+            <header id="header" class="header clearfix">
                 <div class="header-wrap clearfix">
                     <div class="container">
                         <div class="row">
                             <div class="flat-wrapper">
                                 <div id="logo" class="logo">
-                                        <img src='images/logosmall.png' alt="images" />
+                                    {/* <img src={} alt="images" /> */}
                                 </div>
                                 <div class="btn-menu">
                                     <span></span>
                                 </div>
-                           
-                                <div class="nav-wrap">                                
+
+                                <div class="nav-wrap">
                                     <nav id="mainnav" class="mainnav">
                                         <ul class="menu">
                                             <li class="home active">
@@ -28,238 +31,217 @@ const NavBar = () => {
                                             
                                             <li class="resources has-mega-menu">
                                                 <Link class="has-mega" to="#">Platform</Link>
-                                                <div class="submenu mega-menu">
+                                                <div class="submenu mega-menu menu2">
                                                     <div class="col-md-12 tabs-container">
-                                                        <div class="col-md-2 col-sm-2 no-padding">
+                                                        <div class="col-md-3 col-sm-10 no-padding1">
                                                           <ul class="nav nav-tabs tabs-left">
                                                             <li class="active" id="defaultOpen" onmouseover="learning(event, 'tab1-v')">Learning360.AI</li>
                                                             <li onmouseover="openSales(event, 'tab2-v')">My360.AI</li>
                                                           </ul>
                                                         </div>
                                                       
-                                                        <div class="col-md-10 col-sm-10 no-padding1"> 
+                                                        <div class="col-md-8 col-sm-10 no-padding1"> 
                                                           <div class="tab-content">
-                                                            <div class="tabpane active" id="tab1-v">
-                                                                <div class="col-md-3 col-sm-3 border-right">
-                                                                    <Link to="/aboutLearning"><img src="images/company1.png" />
-                                                                    <p>About Learning360.AI</p></Link>
-                                                                  </div>
-                                                                <div class="col-md-3 col-sm-3 border-right">
-                                                                    <Link to="/appsInPlatform"><img src="images/company4.png" />
-                                                                    <p>Apps in Platform</p></Link>
-                                                                </div>
-                                                              
-                                                              <div class="clearfix"></div>
-                                                      
-                                                            </div>
-                                                            <div class="tabpane active" id="tab2-v">
-                                                                <div class="col-md-3 col-sm-3 border-right">
-                                                                    <Link to="/aboutMy360Main"><img src="images/company4.png" />
-                                                                    <p>About My360.AI </p></Link>
-                                                                  </div>
-                                                                <div class="col-md-3 col-sm-3 border-right">
-                                                                    <Link to="/salesAnalyticsMain"><img src="images/company1.png" />
-                                                                    <p>Sales Analytics </p></Link>
-                                                                  </div>
-                                                                  <div class="col-md-3 col-sm-3 border-right">
-                                                                    <Link to="financeAnalytics.html"><img src="images/company2.png" />
-                                                                    <p>Cash Flow Analytics</p></Link>
-                                                                </div>
+                                                            <div class="tabpane active tab" id="tab1-v">
+                                                                <ul class="border-right">
+                                                                    <li class="span-text">
+                                                                        <Link to="/aboutLearning"><img src="../../../public/images/icon/open-book.png" />
+                                                                        <span>About Learning360.AI</span></Link>
+                                                                    </li>
+                                                                    <li class="span-text">
+                                                                        <Link to="/appsInPlatform"><img src="../../static/images/icon/mobile-app.png" />
+                                                                        <span>Apps in Platform</span></Link>
+                                                                    </li>
+                                                                </ul>
                                                               <div class="clearfix"></div>
                                                             </div>
-                                                          </div>
+                                                            <div class="tabpane active tab" id="tab2-v">
+                                                                <ul class="border-right">
+                                                                    <li class="span-text">
+                                                                        <Link to="aboutMy360Main"><img src="images/icons/about.png" />
+                                                                        <span>About My360.AI </span></Link>
+                                                                    </li>
+                                                                    <li class="span-text">
+                                                                        <Link to="/salesAnalyticsMain"><img src="images/icons/sales.png" />
+                                                                        <span>Sales Analytics </span></Link>
+                                                                    </li>
+                                                                    <li class="span-text">
+                                                                        <Link to="/cashFlowAnalytics"><img src="images/icons/cash-flow.png" />
+                                                                        <span>Cash Flow Analytics </span></Link>
+                                                                    </li>
+                                                                </ul>
+                                                              <div class="clearfix"></div>
+                                                            </div>
+                                                            </div>
                                                         </div>
                                                         <div class="clearfix"></div>
-                                                      </div>
-                                                      
+                                                    </div>
+
                                                 </div>
                                             </li>
+                                            
                                             <li class="has-mega-menu">
-                                                <Link class="has-mega" to="#mega">Technologies</Link>
-                                                <div class="submenu mega-menu">
-                                                    <div class="row">
-                                                            <div class="col-md-3 col-sm-3 col-xs-6">
-                                                                <div class="entry-cover">
-                                                                    <Link to="dataManagment.html">
-                                                                        <img src="images/huddle.png" alt="images" />
-                                                                        <span>Data Management</span>
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3 col-sm-3 col-xs-6">
-                                                                <div class="entry-cover">
-                                                                    <Link to="dataIntegration.html">
-                                                                        <img src="images/job-portal.png" alt="images" />
-                                                                        <span>Data Integration and Virtualization</span>
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3 col-xs-6">
-                                                                <div class="entry-cover">
-                                                                    <Link to="dataReport.html">
-                                                                        <img src="images/App1.png" alt="images" />
-                                                                        <span>Data Story Telling</span>
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3 col-xs-6">
-                                                                <div class="entry-cover">
-                                                                    <Link to="digitalTechnologies.html">
-                                                                        <img src="images/App2.png" alt="images" />
-                                                                        <span>Digitalization</span>
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
-                                                            <div class="flat-divider d40px"></div>
+                                                <Link class="has-mega" to="#">Technologies</Link>
+                                                <div class="submenu mega-menu menu2">
+                                                    <div class="col-md-12 tabs-container">
+                                                        <div class="col-md-3 col-sm-10 no-padding1">
+                                                          <ul class="nav nav-tabs tabs-left">
+                                                            <li class="active" id="defaultOpen1" onmouseover="learning1(event, 'tab1-v1')">Data</li>
+                                                            <li onmouseover="openSales1(event, 'tab2-v2')">Digital</li>
                                                             
-                                                        
-                                                        <div class="flat-divider d40px"></div>
-                                                    </div>
-                                                    <div class="row">
-                                                            <div class="col-md-3 col-sm-3 col-xs-6">
-                                                                <div class="entry-cover">
-                                                                    <Link to="dataWarehouse.html">
-                                                                        <img src="images/App3.png" alt="images" />
-                                                                        <span>Data Warehouse & Data Lakes</span>
-                                                                    </Link>
+                                                          </ul>
+                                                        </div>
+                                                            <div class="col-md-9 col-sm-10 no-padding1">
+                                                                <div class="tab-content">
+                                                                    <div class="tabpane1 active tab1" id="tab1-v1">
+                                                                        <ul class="border-right">
+                                                                            <li class="span-text">
+                                                                                <Link to="/dataManagementMain"><img src="images/icons/infrastructure.png" />
+                                                                                <span>Data Management</span></Link>
+                                                                            </li>
+                                                                            <li class="span-text">
+                                                                                <Link to="/dataIntegration"><img src="images/icons/descriptor.png" />
+                                                                                    <span>Data Integration and Virtualization</span></Link>
+                                                                            </li>
+                                                                            <li class="span-text">
+                                                                                <Link to="/dataStoryTelling"><img src="images/icons/storytelling.png" />
+                                                                                    <span>Data Story Telling</span></Link>
+                                                                            </li>
+                                                                            <li class="span-text">
+                                                                                <Link to="/openSource"><img src="images/icons/open-source.png" />
+                                                                                    <span>Open Source</span></Link>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                    <div class="tabpane1" id="tab2-v2">
+                                                                        <ul class="border-right">
+                                                                            <li class="span-text">
+                                                                                <Link to="/digitalization"><img src="images/icons/webinar.png" />
+                                                                                <span>Digitalization</span></Link>
+                                                                            </li>
+                                                                            <li class="span-text">
+                                                                                <Link to="/dataWarehouse"><img src="images/icons/big-data.png" />
+                                                                                    <span>Data Warehouse & Data Lakes</span></Link>
+                                                                            </li>
+                                                                            <li class="span-text">
+                                                                                <Link to="/cloudTechnologies"><img src="images/icons/cloud-computing.png" />
+                                                                                    <span>Cloud Technologies</span></Link>
+                                                                            </li>
+                                                                            <li class="span-text">
+                                                                                <Link to="mobileTechnologies"><img src="images/icons/social-media.png" />
+                                                                                <span>Mobile Technologies</span></Link>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-md-3 col-sm-3 col-xs-6">
-                                                                <div class="entry-cover">
-                                                                    <Link to="cloudTechnologies.html">
-                                                                        <img src="images/cloud.png" alt="images" />
-                                                                        <span>Cloud Technologies</span>
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3 col-xs-6">
-                                                                <div class="entry-cover">
-                                                                    <Link to="mobileTechnologies.html">
-                                                                        <img src="images/DataAnalysis.png" alt="images" />
-                                                                        <span>Mobile Technologies</span>
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3 col-xs-6">
-                                                                <div class="entry-cover">
-                                                                    <Link to="openSource.html">
-                                                                        <img src="images/DataAnalysis.png" alt="images" />
-                                                                        <span>Open Source</span>
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
+                                                        <div class="clearfix"></div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="has-mega-menu">
                                                 <Link class="has-mega" to="#mega">Services</Link>
-                                                <div class="submenu mega-menu">
-                                                    <div class="row">
-                                                        <div class="col-md-3 col-sm-3">
-                                                            <div class="entry-cover">
-                                                                <Link to="consulting.html">
-                                                                    <img src="images/services/services3.png" alt="images" />
-                                                                    <span>Consulting Services</span>
-                                                                </Link>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3 col-sm-3">
-                                                            <div class="entry-cover">
-                                                                <Link to="knowledge.html">
-                                                                    <img src="images/services/services1.png" alt="images" />
-                                                                    <span>Knowledge Service</span>
-                                                                </Link>
-                                                            </div>
-                                                        </div>
-                                                            <div class="col-md-3 col-sm-3">
-                                                                <div class="entry-cover">
-                                                                    <Link to="projectService.html">
-                                                                        <img src="images/services/services2.png" alt="images" />
-                                                                        <span>Managed Services</span>
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
+                                                <div class="submenu mega-menu menu2 menu3">
+                                                        <div class="col-md-12 col-sm-10 padding1">
+                                                            <ul class="border-right">
+                                                                <li class="span-text">
+                                                                    <Link to="/consultingServices"><img src="images/icons/customer-service.png" />
+                                                                    <span>Consulting Services</span></Link>
+                                                                </li>
+                                                                <li class="span-text">
+                                                                    <Link to="/knowledgeServices"><img src="images/icons/thought.png" />
+                                                                    <span>Knowledge Services</span></Link>
+                                                                </li>
+                                                                <li class="span-text">
+                                                                    <Link to="/managedServices"><img src="../static/images/icons/managed.png" />
+                                                                    <span>Managed Services</span></Link>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                 </div>
-                                            </li>     
+                                            </li>
                                             <li class="resources has-mega-menu">
                                                 <Link class="has-mega" to="#">Resources</Link>
-                                                <div class="submenu mega-menu">
+                                                <div class="submenu mega-menu menu2">
                                                     <div class="row">
-                                                            <div class="col-md-4 ">
-                                                                <div class="mega-title">
-                                                                    <h5 class="btn-mega">BLOGPOSTS</h5>
-                                                                </div>
-                                                                <ul class="mega-menu-sub"> 
-    <li><Link to="blog-EltActivity.html">Top 10 ETL Activities in DW Projects</Link></li>
-    <li><Link to="blog-storytelling.html">Finding Story / 360 in Data sets</Link></li>                  
-    <li><Link to="blog-platform.html">Importance of Analytics Platform for Small Business</Link></li>
-    <li><Link to="blog.html" class="resources_data">See more blogs</Link></li>
-</ul>
+                                                        <div class="col-md-6">
+                                                            <div class="mega-title">
+                                                                <h5 class="btn-mega">BLOGPOSTS</h5>
                                                             </div>
-                                                            <div class="col-md-4">
-                                                                <div class="mega-title">
-                                                                    <h5 class="btn-mega">Books</h5>
-                                                                </div>
-                                                                <ul class="mega-menu-sub"> 
-                                                                   <li><Link to="books.html">ABC dataWarehousing</Link></li>
-                                                                  <li><Link to="books1.html">Retail 101 Glossary</Link></li>
-                                                                    
-                                                                </ul>
-                                                            </div>
-                                                            
+                                                            <ul class="mega-menu-sub">
+                                                                <li><Link to="/eTLActivities">Top 10 ETL
+                                                                        Activities in DW Projects</Link></li>
+                                                                <li><Link to="/findingStory">Finding Story / 360
+                                                                        in Data sets</Link></li>
+                                                                <li><Link to="/analyticsPlatform">Importance of Analytics
+                                                                        Platform for Small Business</Link></li>
+                                                                <li><Link to="/seeMoreBlogs" class="resources_data">See more
+                                                                        blogs</Link></li>
+                                                            </ul>
                                                         </div>
+                                                        <div class="col-md-6">
+                                                            <div class="mega-title">
+                                                                <h5 class="btn-mega">Books</h5>
+                                                            </div>
+                                                            <ul class="mega-menu-sub">
+                                                                <li><Link to="/aBCDataWareHouse">ABC dataWarehousing</Link></li>
+                                                                <li><Link to="/retail101Glossary">Retail 101 Glossary</Link></li>
+                                                              
+                                                            </ul>
+                                                        </div>
+                                                        
                                                     </div>
+                                                </div>
                                             </li>
                                             
                                             <li class="resources has-mega-menu">
                                                 <Link class="has-mega" to="#">Company</Link>
-                                                <div class="submenu mega-menu">
+                                                <div class="submenu mega-menu menu">
                                                     <div class="row">
-                                                            <div class="col-md-4">
-                                                                <div class="mega-title">
-                                                                    <h5 class="btn-mega">About</h5>
-                                                                </div>
-                                                                <ul class="mega-menu-sub"> 
-                                                                   
-                                                                    <li><Link to="approach.html">Our Approach</Link></li>                  
-                                                                    <li><Link to="culture.html">Our Culture</Link></li>
-                                                                    <li><Link to="team.html">Our Team</Link></li>                                                   
-                                                                  
-                                                                </ul>
+                                                        <div class="col-md-4">
+                                                            <div class="mega-title">
+                                                                <h5 class="btn-mega">About</h5>
                                                             </div>
-                                                            <div class="col-md-4">
-                                                                <div class="mega-title">
-                                                                    <h5 class="btn-mega">Careers</h5>
-                                                                </div>
-                                                                <ul class="mega-menu-sub"> 
-                                                                    <li><Link to="career.html">SQL Developer</Link></li>
-                                                                    <li><Link to="career.html">IT Recruiter</Link></li>     
-                                                                    <li><Link to="career.html">BlockChain Developer</Link></li>         
-                                                                    <li><Link to="positions.html" class="resources_data">See All Positions</Link></li>
-                                                                    
-                                                                </ul>
+                                                            <ul class="mega-menu-sub">
+                                                                
+                                                                <li><Link to="approach.html">Our Approach</Link></li>
+                                                                <li><Link to="culture.html">Our Culture</Link></li>
+                                                                <li><Link to="team.html">Our Team</Link></li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-4 ">
+                                                            <div class="mega-title">
+                                                                <h5 class="btn-mega">Careers</h5>
                                                             </div>
-                                                            
-                                                           
+                                                            <ul class="mega-menu-sub">
+                                                                <li><Link to="career.html">.NET Developer</Link></li>
+                                                                <li><Link to="career1.html">Angular Developer</Link></li>
+                                                                <li><Link to="career2.html">MSBI Developer</Link></li>
+                                                                <li><Link to="positions.html" class="resources_data">See
+                                                                        All Positions</Link></li>
+
+                                                            </ul>
+                                                        </div>
+
+
                                                     </div>
-                                                  
+
                                                 </div>
                                             </li>
-                                            <li><Link to="contact.html">Contact</Link></li>
-                                        </ul>                                      
-                                    </nav> 
+                                           
+                                            <li><Link to="/contactUs">Contact</Link></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
-                    </div>            
-                </div> 
+                    </div>
+                </div>
             </header>
         </div>
-
-
 
 
         </React.Fragment>

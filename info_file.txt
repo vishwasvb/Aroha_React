@@ -13,3 +13,14 @@ npm install bcrypt -g
 npm install bcrypt --save
 
 npm 
+
+
+Movie app with original api clone link :- git@github.com:aroharamesh/movielibbackendservices.git
+
+Ramesh jp11:49 AM
+I shared a Jam file with the meeting: https://jamboard.google.com/d/1udnK-_WwIqmeLqeh11Doue_DmCti4tn-fFEQf0LW0BM/edit?usp=meet_whiteboard
+I shared a Jam file with the meeting: https://jamboard.google.com/d/1VM48YH4g14C1k3eTO3OHiupZ1bgWNbG95-mdlMs5k5o/edit?usp=meet_whiteboard
+I shared a Jam file with the meeting: https://jamboard.google.com/d/1o9jk5Amv-4C1NGxY13GsTbzIO3W5wwAbc62pA6vN8Jo/edit?usp=meet_whiteboard
+
+
+movieAPP User creation end point url : - http://54.244.102.60:3900/api/users
