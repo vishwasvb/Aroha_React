@@ -206,9 +206,9 @@ const NavBar = () => {
                                                             </div>
                                                             <ul class="mega-menu-sub">
                                                                 
-                                                                <li><Link to="approach.html">Our Approach</Link></li>
-                                                                <li><Link to="culture.html">Our Culture</Link></li>
-                                                                <li><Link to="team.html">Our Team</Link></li>
+                                                                <li><Link to="/ourApproach">Our Approach</Link></li>
+                                                                <li><Link to="/ourCulture">Our Culture</Link></li>
+                                                                <li><Link to="/ourTeam">Our Team</Link></li>
                                                                 
                                                             </ul>
                                                         </div>
@@ -217,10 +217,10 @@ const NavBar = () => {
                                                                 <h5 class="btn-mega">Careers</h5>
                                                             </div>
                                                             <ul class="mega-menu-sub">
-                                                                <li><Link to="career.html">.NET Developer</Link></li>
-                                                                <li><Link to="career1.html">Angular Developer</Link></li>
-                                                                <li><Link to="career2.html">MSBI Developer</Link></li>
-                                                                <li><Link to="positions.html" class="resources_data">See
+                                                                <li><Link to="/dotNetDeveloper">.NET Developer</Link></li>
+                                                                <li><Link to="/angularDeveloper">Angular Developer</Link></li>
+                                                                <li><Link to="/mSBIDeveloper">MSBI Developer</Link></li>
+                                                                <li><Link to="/seeAllPositions" class="resources_data">See
                                                                         All Positions</Link></li>
 
                                                             </ul>

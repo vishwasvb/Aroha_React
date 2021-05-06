@@ -39,6 +39,15 @@ import SeeMoreBlogs from './components/resources/blogposts/seeMoreBlogs';
 import ABCDataWareHouse from './components/resources/books/aBCDataWareHouse';
 import Retail101Glossary from './components/resources/books/retail101Glossary';
 
+//Company
+import OurApproach from './components/company/about/ourApproach';
+import OurCulture from './components/company/about/ourCulture';
+import OurTeam from './components/company/about/ourTeam';
+import DotNetDeveloper from './components/company/careers/dotNetDeveloper';
+import AngularDeveloper from './components/company/careers/angularDeveloper';
+import MSBIDeveloper from './components/company/careers/mSBIDeveloper';
+import SeeAllPositions from './components/company/careers/seeAllPositions';
+
 // Contact 
 import ContactUs from './components/contact/contactUs';
 
@@ -81,10 +90,20 @@ function App() {
             <Route path='/aBCDataWareHouse' component={ABCDataWareHouse} />
             <Route path='/retail101Glossary' component={Retail101Glossary} />
 
+          {/* Company */}
+            <Route path='/ourApproach' component={OurApproach} />
+            <Route path='/ourCulture' component={OurCulture} />
+            <Route path='/ourTeam' component={OurTeam} />
+            <Route path='/dotNetDeveloper' component={DotNetDeveloper} />
+            <Route path='/angularDeveloper' component={AngularDeveloper} />
+            <Route path='/mSBIDeveloper' component={MSBIDeveloper} />
+            <Route path='/seeAllPositions' component={SeeAllPositions} />
+
           {/* Contact */}
-          <Route path='/contactUs' component={ContactUs} />
-
-
+            <Route path='/contactUs' component={ContactUs} />
+        
+          {/* Home */}
+            <Route path='/home' component={Home} />
             <Route path="/" exact component={Home} />
         </Switch>
 
