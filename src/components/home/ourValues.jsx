@@ -1,10 +1,12 @@
 import React from 'react';
 // import 'font-awesome/css/font-awesome.css';
 
+import 'font-awesome/css/font-awesome.css';
+
 const OurValues = () => {
     return ( 
         <React.Fragment>
-             <div class="flat-row">
+                <div class="flat-row">
             <div class="container">
                 <div class="row">
                     <div class="title-section ">
@@ -17,7 +19,7 @@ const OurValues = () => {
                     <div class="col-md-4">
                         <div class="iconbox style_4">
                             <div class="box-header">
-                                <div class="box-icon"><i class="fa icons icon-diamond"></i></div>
+                                <div class="box-icon"><i class="fa fa-diamond"></i></div>
                                 <h5 class="box-title">Be an ambassador</h5>
                             </div>
                             <div class="box-content">
@@ -29,7 +31,7 @@ const OurValues = () => {
                     <div class="col-md-4">
                         <div class="iconbox style_4">
                             <div class="box-header">
-                                <div class="box-icon"><i class="fa icons icon-chart"></i></div>
+                                <div class="box-icon"><i class="fa fa-bar-chart"></i></div> 
                                 <h5 class="box-title">Enjoy the journey</h5>
                             </div>
                             <div class="box-content">
@@ -41,7 +43,7 @@ const OurValues = () => {
                     <div class="col-md-4">
                         <div class="iconbox style_4">
                             <div class="box-header">
-                                <div class="box-icon"><i class="fa icons icon-trophy"></i></div>
+                                <div class="box-icon"><i class="fa fa-trophy"></i></div>
                                 <h5 class="box-title">Get it done</h5>
                             </div>
                             <div class="box-content">
@@ -58,7 +60,7 @@ const OurValues = () => {
                     <div class="col-md-4">
                         <div class="iconbox style_4">
                             <div class="box-header">
-                                <div class="box-icon"><i class="fa icons icon-present"></i></div>
+                                <div class="box-icon"><i class="fa fa-gift"></i></div>
                                 <h5 class="box-title">Evolve and adapt</h5>
                             </div>
                             <div class="box-content">
@@ -71,7 +73,7 @@ const OurValues = () => {
                     <div class="col-md-4">
                         <div class="iconbox style_4">
                             <div class="box-header">
-                                <div class="box-icon"><i class="fa icons icon-envelope-open"></i></div>
+                                <div class="box-icon"><i class="fa fa-envelope-open"></i></div>
                                 <h5 class="box-title">Do the right thing</h5>
                             </div>
                             <div class="box-content">
@@ -83,7 +85,7 @@ const OurValues = () => {
                     <div class="col-md-4">
                         <div class="iconbox style_4">
                             <div class="box-header">
-                                <div class="box-icon"><i class="fa icons icon-globe"></i></div>
+                                <div class="box-icon"><i class="fa fa-globe"></i></div>
                                 <h5 class="box-title">Make something better, today</h5>
                             </div>
                             <div class="box-content">
@@ -96,7 +98,6 @@ const OurValues = () => {
                 </div>
             </div>
         </div>
-
         </React.Fragment>
      );
 }

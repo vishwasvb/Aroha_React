@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 // import image from '../../../public/images/icon/'
 
 
+
 const NavBar = () => {
     return ( 
         <React.Fragment>
@@ -16,7 +17,7 @@ const NavBar = () => {
                         <div class="row">
                             <div class="flat-wrapper">
                                 <div id="logo" class="logo">
-                                    {/* <img src={} alt="images" /> */}
+                                    <img src={"images/logosmall.png"} alt="images" />
                                 </div>
                                 <div class="btn-menu">
                                     <span></span>
@@ -25,8 +26,8 @@ const NavBar = () => {
                                 <div class="nav-wrap">
                                     <nav id="mainnav" class="mainnav">
                                         <ul class="menu">
-                                            <li class="home active">
-                                                <Link to="/">Home</Link>
+                                            <li class="home ">
+                                                <a href="/">Home</a>
                                             </li>
                                             
                                             <li class="resources has-mega-menu">
@@ -45,11 +46,11 @@ const NavBar = () => {
                                                             <div class="tabpane active tab" id="tab1-v">
                                                                 <ul class="border-right">
                                                                     <li class="span-text">
-                                                                        <Link to="/aboutLearning"><img src="../../../public/images/icon/open-book.png" />
+                                                                        <Link to="/aboutLearning"><img src="images/icon/open-book.png" />
                                                                         <span>About Learning360.AI</span></Link>
                                                                     </li>
                                                                     <li class="span-text">
-                                                                        <Link to="/appsInPlatform"><img src="../../static/images/icon/mobile-app.png" />
+                                                                        <Link to="/appsInPlatform"><img src="images/icon/mobile-app.png" />
                                                                         <span>Apps in Platform</span></Link>
                                                                     </li>
                                                                 </ul>
@@ -58,15 +59,15 @@ const NavBar = () => {
                                                             <div class="tabpane active tab" id="tab2-v">
                                                                 <ul class="border-right">
                                                                     <li class="span-text">
-                                                                        <Link to="aboutMy360Main"><img src="images/icons/about.png" />
+                                                                        <Link to="aboutMy360Main"><img src="images/icon/about.png" />
                                                                         <span>About My360.AI </span></Link>
                                                                     </li>
                                                                     <li class="span-text">
-                                                                        <Link to="/salesAnalyticsMain"><img src="images/icons/sales.png" />
+                                                                        <Link to="/salesAnalyticsMain"><img src="images/icon/sales.png" />
                                                                         <span>Sales Analytics </span></Link>
                                                                     </li>
                                                                     <li class="span-text">
-                                                                        <Link to="/cashFlowAnalytics"><img src="images/icons/cash-flow.png" />
+                                                                        <Link to="/cashFlowAnalytics"><img src="images/icon/cash-flow.png" />
                                                                         <span>Cash Flow Analytics </span></Link>
                                                                     </li>
                                                                 </ul>
@@ -96,19 +97,19 @@ const NavBar = () => {
                                                                     <div class="tabpane1 active tab1" id="tab1-v1">
                                                                         <ul class="border-right">
                                                                             <li class="span-text">
-                                                                                <Link to="/dataManagementMain"><img src="images/icons/infrastructure.png" />
+                                                                                <Link to="/dataManagementMain"><img src="images/icon/infrastructure.png" />
                                                                                 <span>Data Management</span></Link>
                                                                             </li>
                                                                             <li class="span-text">
-                                                                                <Link to="/dataIntegration"><img src="images/icons/descriptor.png" />
+                                                                                <Link to="/dataIntegration"><img src="images/icon/descriptor.png" />
                                                                                     <span>Data Integration and Virtualization</span></Link>
                                                                             </li>
                                                                             <li class="span-text">
-                                                                                <Link to="/dataStoryTelling"><img src="images/icons/storytelling.png" />
+                                                                                <Link to="/dataStoryTelling"><img src="images/icon/storytelling.png" />
                                                                                     <span>Data Story Telling</span></Link>
                                                                             </li>
                                                                             <li class="span-text">
-                                                                                <Link to="/openSource"><img src="images/icons/open-source.png" />
+                                                                                <Link to="/openSource"><img src="images/icon/open-source.png" />
                                                                                     <span>Open Source</span></Link>
                                                                             </li>
                                                                         </ul>
@@ -117,19 +118,19 @@ const NavBar = () => {
                                                                     <div class="tabpane1" id="tab2-v2">
                                                                         <ul class="border-right">
                                                                             <li class="span-text">
-                                                                                <Link to="/digitalization"><img src="images/icons/webinar.png" />
+                                                                                <Link to="/digitalization"><img src="images/icon/webinar.png" />
                                                                                 <span>Digitalization</span></Link>
                                                                             </li>
                                                                             <li class="span-text">
-                                                                                <Link to="/dataWarehouse"><img src="images/icons/big-data.png" />
+                                                                                <Link to="/dataWarehouse"><img src="images/icon/big-data.png" />
                                                                                     <span>Data Warehouse & Data Lakes</span></Link>
                                                                             </li>
                                                                             <li class="span-text">
-                                                                                <Link to="/cloudTechnologies"><img src="images/icons/cloud-computing.png" />
+                                                                                <Link to="/cloudTechnologies"><img src="images/icon/cloud-computing.png" />
                                                                                     <span>Cloud Technologies</span></Link>
                                                                             </li>
                                                                             <li class="span-text">
-                                                                                <Link to="mobileTechnologies"><img src="images/icons/social-media.png" />
+                                                                                <Link to="mobileTechnologies"><img src="images/icon/social-media.png" />
                                                                                 <span>Mobile Technologies</span></Link>
                                                                             </li>
                                                                         </ul>
@@ -147,15 +148,15 @@ const NavBar = () => {
                                                         <div class="col-md-12 col-sm-10 padding1">
                                                             <ul class="border-right">
                                                                 <li class="span-text">
-                                                                    <Link to="/consultingServices"><img src="images/icons/customer-service.png" />
+                                                                    <Link to="/consultingServices"><img src="images/icon/customer-service.png" />
                                                                     <span>Consulting Services</span></Link>
                                                                 </li>
                                                                 <li class="span-text">
-                                                                    <Link to="/knowledgeServices"><img src="images/icons/thought.png" />
+                                                                    <Link to="/knowledgeServices"><img src="images/icon/thought.png" />
                                                                     <span>Knowledge Services</span></Link>
                                                                 </li>
                                                                 <li class="span-text">
-                                                                    <Link to="/managedServices"><img src="../static/images/icons/managed.png" />
+                                                                    <Link to="/managedServices"><img src="../static/images/icon/managed.png" />
                                                                     <span>Managed Services</span></Link>
                                                                 </li>
                                                             </ul>

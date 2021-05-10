@@ -39,6 +39,27 @@ import SeeMoreBlogs from './components/resources/blogposts/seeMoreBlogs';
 import ABCDataWareHouse from './components/resources/books/aBCDataWareHouse';
 import Retail101Glossary from './components/resources/books/retail101Glossary';
 
+    //More Blogs
+      import ETLActivitiesMore from './components/resources/blogposts/seeMoreBlogsNBooks/eTLActivities';
+      import FindingStoryMore from './components/resources/blogposts/seeMoreBlogsNBooks/findingStoryMore';
+      import AnalyticsPlatformMore from './components/resources/blogposts/seeMoreBlogsNBooks/analyticsPlatformMore';
+      import DataCitizens from './components/resources/blogposts/seeMoreBlogsNBooks/dataCitizens';
+      import ConversationalBI from './components/resources/blogposts/seeMoreBlogsNBooks/conversationalBI';
+      import ModernizationofAnalytical from './components/resources/blogposts/seeMoreBlogsNBooks/modernizationOfAnalytical';
+      import DataAnalyst from './components/resources/blogposts/seeMoreBlogsNBooks/dataAnalyst';
+      import VisualizationAnalysis from './components/resources/blogposts/seeMoreBlogsNBooks/visualizationAnalysis';
+      import DashboardDesign from './components/resources/blogposts/seeMoreBlogsNBooks/dashboardDesign';
+      import CultureInAnEnterprise from './components/resources/blogposts/seeMoreBlogsNBooks/cultureInAnEnterprise';
+      import DataScienceTeam from './components/resources/blogposts/seeMoreBlogsNBooks/dataScienceTeam';
+      import DataLayer from './components/resources/blogposts/seeMoreBlogsNBooks/dataLayer';
+      import CalculatingROI from './components/resources/blogposts/seeMoreBlogsNBooks/calculatingROI';
+      import InsightVisualizationAndAnalytics from './components/resources/blogposts/seeMoreBlogsNBooks/insightVisualizationAndAnalytics';
+      import BusinessExecutivesDevelop from './components/resources/blogposts/seeMoreBlogsNBooks/businessExecutivesDevelop';
+
+    // More Books
+      import BooksMore from './components/resources/blogposts/seeMoreBlogsNBooks/booksMore';
+
+
 //Company
 import OurApproach from './components/company/about/ourApproach';
 import OurCulture from './components/company/about/ourCulture';
@@ -50,6 +71,7 @@ import SeeAllPositions from './components/company/careers/seeAllPositions';
 
 // Contact 
 import ContactUs from './components/contact/contactUs';
+
 
 
 
@@ -89,6 +111,27 @@ function App() {
             <Route path='/seeMoreBlogs' component={SeeMoreBlogs} />
             <Route path='/aBCDataWareHouse' component={ABCDataWareHouse} />
             <Route path='/retail101Glossary' component={Retail101Glossary} />
+
+            {/* More Blogs */}
+              <Route path='/eTLActivitiesMore' component={ETLActivitiesMore} />
+              <Route path='/findingStoryMore' component={FindingStoryMore} />
+              <Route path='/analyticsPlatformMore' component={AnalyticsPlatformMore} />
+              <Route path='/dataCitizens' component={DataCitizens} />
+              <Route path='/conversationalBI' component={ConversationalBI} />
+              <Route path='/modernizationofAnalytical' component={ModernizationofAnalytical} />
+              <Route path='/dataAnalyst' component={DataAnalyst} />
+              <Route path='/visualizationAnalysis' component={VisualizationAnalysis} />
+              <Route path='/dashboardDesign' component={DashboardDesign} />
+              <Route path='/cultureInAnEnterprise' component={CultureInAnEnterprise} />
+              <Route path='/dataScienceTeam' component={DataScienceTeam} />
+              <Route path='/dataLayer' component={DataLayer} />
+              <Route path='/calculatingROI' component={CalculatingROI} />
+              <Route path='/insightVisualizationAndAnalytics' component={InsightVisualizationAndAnalytics} />
+              <Route path='/businessExecutivesDevelop' component={BusinessExecutivesDevelop} />
+
+            {/* More Books */}
+              <Route path='/booksMore' component={BooksMore} />
+
 
           {/* Company */}
             <Route path='/ourApproach' component={OurApproach} />

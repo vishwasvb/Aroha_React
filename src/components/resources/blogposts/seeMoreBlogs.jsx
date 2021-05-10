@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {Link} from 'react-router-dom'
+
 const SeeMoreBlogs = () => {
     return ( 
         <React.Fragment>
@@ -13,8 +15,8 @@ const SeeMoreBlogs = () => {
                                     <div class="col-md-12  text-center">
                                         <div class="flat-tabs">
                                             <ul class="menu-tabs">
-                                                <li class="active"><a href="#">Blogs</a></li>
-                                                <li><a href="#">Books</a></li>
+                                                <li class="active"><Link to="#">Blogs</Link></li>
+                                                <li><Link to="/booksMore">Books</Link></li>
                                                
                                             </ul>
                                             <div class="content-tab">
@@ -27,12 +29,12 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-EltActivity.html"><img src="images/blog/9.jpg" alt="images" /></a>
+                                                                                <Link  to='/eTLActivitiesMore'><img src="images/blog/9.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
                                                                                 <h3 class="box-title">
-                                                                                    <a href="#">Top 10 ETL Activities in DW Projects</a>    
+                                                                                    <Link to="#">Top 10 ETL Activities in DW Projects</Link>    
                                                                                 </h3>
                                                                             </div>
                                                                             <div class="box-content">
@@ -46,7 +48,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-storytelling.html"><img src="images/blog/10.png" alt="images" /></a>
+                                                                                <Link to="findingStoryMore"><img src="images/blog/10.png" alt="images" /></Link>
                                                                             </div>
                                                                            
                                                                             <div class="box-header">
@@ -64,7 +66,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-platform.html"><img src="images/blog/11.png" alt="images" /></a>
+                                                                                <Link to="/analyticsPlatformMore"><img src="images/blog/11.png" alt="images" /></Link>
                                                                             </div>
                                                                            
                                                                             <div class="box-header">
@@ -83,12 +85,12 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-datacitizen.html"><img src="images/blog/b1.jpg" alt="images" /></a>
+                                                                                <Link to="/dataCitizens"><img src="images/blog/b1.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
                                                                                 <h3 class="box-title">
-                                                                                    <a href="#">Data Citizen in an Enterprise</a>    
+                                                                                    <Link to="#">Data Citizen in an Enterprise</Link>    
                                                                                 </h3>
                                                                             </div>
                                                                             <div class="box-content">
@@ -103,7 +105,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-conversational.html"><img src="images/blog/b2.jpg" alt="images" /></a>
+                                                                                <Link to="/conversationalBI"><img src="images/blog/b2.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -121,7 +123,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-datamoderization.html"><img src="images/blog/b3.jpg" alt="images" /></a>
+                                                                                <Link to="/modernizationofAnalytical"><img src="images/blog/b3.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -139,7 +141,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-database.html"><img src="images/blog/b4.jpg" alt="images" /></a>
+                                                                                <Link to="/dataAnalyst"><img src="images/blog/b4.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -157,7 +159,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-visulization.html"><img src="images/blog/b5.jpg" alt="images" /></a>
+                                                                                <Link to="/visualizationAnalysis"><img src="images/blog/b5.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -177,7 +179,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-single.html"><img src="images/blog/1.jpg" alt="images" /></a>
+                                                                                <Link to="/dashboardDesign"><img src="images/blog/1.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -195,7 +197,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-culture.html"><img src="images/blog/2.jpg" alt="images" /></a>
+                                                                                <Link to="/cultureInAnEnterprise"><img src="images/blog/2.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -213,12 +215,12 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-dataScience.html"><img src="images/blog/3.jpg" alt="images" /></a>
+                                                                                <Link to="/dataScienceTeam"><img src="images/blog/3.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
                                                                                 <h3 class="box-title">
-                                                                                    <a href="#">Data Science Team @ enterprises</a>    
+                                                                                    <Link to="#">Data Science Team @ enterprises</Link>    
                                                                                 </h3>
                                                                             </div>
                                                                             <div class="box-content">
@@ -231,12 +233,12 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-datalayer.html"><img src="images/blog/5.png" alt="images" /></a>
+                                                                                <Link to="/dataLayer"><img src="images/blog/5.png" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
                                                                                 <h3 class="box-title">
-                                                                                    <a href="#">Data Layer for Visual Analytics</a>    
+                                                                                    <Link to="#">Data Layer for Visual Analytics</Link>    
                                                                                 </h3>
                                                                             </div>
                                                                             <div class="box-content">
@@ -251,7 +253,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-rio.html"><img src="images/blog/6.jpg" alt="images" /></a>
+                                                                                <Link to="/calculatingROI"><img src="images/blog/6.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -269,7 +271,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-insight.html"><img src="images/blog/7.jpg" alt="images" /></a>
+                                                                                <Link to="/insightVisualizationAndAnalytics"><img src="images/blog/7.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -287,7 +289,7 @@ const SeeMoreBlogs = () => {
                                                                     <div class="imagebox">
                                                                         <div class="box-wrapper">
                                                                             <div class="box-image">
-                                                                                <a href="blog-business.html"><img src="images/blog/8.jpg" alt="images" /></a>
+                                                                                <Link to="/businessExecutivesDevelop"><img src="images/blog/8.jpg" alt="images" /></Link>
                                                                             </div>
                                                                             
                                                                             <div class="box-header">
@@ -307,49 +309,7 @@ const SeeMoreBlogs = () => {
                                                     </div>
                                                 </div>
         
-                                                <div class="content-inner">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-md-offset-2">
-                                                            <a href="books.html"><div class="imagebox">
-                                                                <div class="box-wrapper">
-                                                                    <div class="box-image">
-                                                                        <img src="images/blog/book.jpg" alt="images" />
-                                                                    </div>
-                                                                    <div class="box-header">
-                                                                        <h3 class="box-title">
-                                                                            <a href="books.html">ABC of Datawarehousing</a>    
-                                                                        </h3>
-                                                                    </div>
-                                                                    <div class="box-content text-size">
-                                                                        <div class="box-desc">Every thing we do in the world have some part of design principles. </div>
-                                                                        <p class="box-readmore">
-                                                                            <a href="books.html">Read More</a>
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div></a>
-                                                        </div>
-                            
-                                                        <div class="col-md-4 ">
-                                                            <a href="books1.html"><div class="imagebox">
-                                                                <div class="box-wrapper">
-                                                                    <div class="box-image">
-                                                                        <img src="images/blog/book1.jpg" alt="images" />
-                                                                    </div>
-                                                                    <div class="box-header">
-                                                                        <h3 class="box-title">
-                                                                            <a href="books1.html">Book2</a>    
-                                                                        </h3>
-                                                                    </div>
-                                                                    <div class="box-content text-size">
-                                                                        <div class="box-desc">For those looking to invest in the growth of your business or create.</div>
-                                                                        <p class="box-readmore">
-                                                                            <a href="books1.html">Read More</a>
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div></a>
-                                                        </div>
+                        
                             
                                                     </div>
                                                 </div>
@@ -364,10 +324,10 @@ const SeeMoreBlogs = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+               
 
            
-        </div>
+     
 
         </React.Fragment>
      );
